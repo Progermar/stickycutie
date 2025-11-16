@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StickyCutie.Wpf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+957adc321ce505e8cff7a7b1d826caa36aaefe65")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61db51ba50869e14c532a49c82c5ed9cde0d6d9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("StickyCutie.Wpf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StickyCutie.Wpf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
