@@ -1,0 +1,38 @@
+<Window x:Class="StickyCutie.Wpf.CreateNoteTitleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Título da nota"
+        Width="320"
+        Height="160"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#FFFDFDFD">
+    <Border Padding="18">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <TextBlock Text="Defina um título para a nova nota"
+                           FontWeight="Bold"
+                           Margin="0,0,0,8"/>
+                <TextBox x:Name="TitleBox"
+                         Height="32"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        Margin="0,12,0,0">
+                <Button Content="Cancelar"
+                        Width="110"
+                        Margin="0,0,8,0"
+                        IsCancel="True"/>
+                <Button Content="Criar"
+                        Width="110"
+                        IsDefault="True"
+                        Click="CreateButton_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

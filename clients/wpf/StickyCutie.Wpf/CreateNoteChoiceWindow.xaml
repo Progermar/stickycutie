@@ -1,0 +1,27 @@
+<Window x:Class="StickyCutie.Wpf.CreateNoteChoiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nova nota"
+        Width="320"
+        MinHeight="190"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#FFFDFDFD">
+    <Border Padding="18"
+            Background="#FFFDFDFD">
+        <StackPanel>
+            <TextBlock Text="Criar nova nota para:"
+                       FontWeight="Bold"
+                       FontSize="16"
+                       Margin="0,0,0,16"/>
+            <Button Content="Pessoal (para mim)"
+                    Height="38"
+                    Margin="0,0,0,10"
+                    Click="PersonalButton_Click"/>
+            <Button Content="Outro usuário do grupo..."
+                    Height="38"
+                    Click="OtherButton_Click"/>
+        </StackPanel>
+    </Border>
+</Window>

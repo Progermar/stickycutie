@@ -1,0 +1,163 @@
+<Window x:Class="StickyCutie.Wpf.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Configurações"
+        Width="520"
+        Height="420"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="CanResize"
+        Background="#FFFDFDFD">
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TabControl Grid.Row="0">
+            <TabItem x:Name="GroupsTab" Header="Grupos">
+                <Grid Margin="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel>
+                        <TextBlock x:Name="GroupSummaryText"
+                                   Text="{Binding ActiveGroupSummary}"
+                                   FontWeight="Bold"
+                                   Margin="0,0,0,4"/>
+                        <TextBlock x:Name="GroupInfoText"
+                                   Foreground="#777"
+                                   TextWrapping="Wrap"
+                                   Margin="0,0,0,8"/>
+                    </StackPanel>
+                    <ListView Grid.Row="1"
+                              ItemsSource="{Binding Groups}"
+                              SelectedItem="{Binding SelectedGroup, Mode=TwoWay}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Nome" Width="180" DisplayMemberBinding="{Binding Name}"/>
+                                <GridViewColumn Header="Descrição" Width="220" DisplayMemberBinding="{Binding Description}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <StackPanel x:Name="GroupButtonsPanel"
+                                Grid.Row="2"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                Margin="0,8,0,0">
+                        <Button Content="Novo" Width="70" Click="CreateGroup_Click" Margin="0,0,6,0"/>
+                        <Button Content="Editar" Width="70" Click="EditGroup_Click" Margin="0,0,6,0"/>
+                        <Button Content="Excluir" Width="70" Click="DeleteGroup_Click" Margin="0,0,6,0"/>
+                        <Button Content="Definir ativo" Width="110" Click="SetActiveGroup_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Usuários">
+                <Grid Margin="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{Binding ActiveUserSummary}"
+                               FontWeight="Bold"
+                               Margin="0,0,0,8"/>
+                    <ListView Grid.Row="1"
+                              ItemsSource="{Binding Users}"
+                              SelectedItem="{Binding SelectedUser, Mode=TwoWay}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Nome" Width="140" DisplayMemberBinding="{Binding Name}"/>
+                                <GridViewColumn Header="E-mail" Width="180" DisplayMemberBinding="{Binding Email}"/>
+                                <GridViewColumn Header="Telefone" Width="120" DisplayMemberBinding="{Binding Phone}"/>
+                                <GridViewColumn Header="Admin" Width="60" DisplayMemberBinding="{Binding IsAdmin}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <StackPanel Grid.Row="2"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                Margin="0,8,0,0">
+                        <Button Content="Novo" Width="70" Click="CreateUser_Click" Margin="0,0,6,0"/>
+                        <Button Content="Editar" Width="70" Click="EditUser_Click" Margin="0,0,6,0"/>
+                        <Button Content="Excluir" Width="70" Click="DeleteUser_Click" Margin="0,0,6,0"/>
+                        <Button Content="Definir ativo" Width="110" Click="SetActiveUser_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Alarmes">
+                <Grid Margin="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel>
+                        <TextBlock Text="Som atual"
+                                   FontWeight="Bold"
+                                   Margin="0,0,0,8"/>
+                        <TextBlock Text="{Binding AlarmSoundSummary}"
+                                   TextWrapping="Wrap"
+                                   Foreground="#555"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                Margin="0,10,0,0">
+                        <Button Content="Abrir pasta"
+                                Width="110"
+                                Margin="0,0,8,0"
+                                Click="OpenAlarmFolder_Click"/>
+                        <Button Content="Escolher som"
+                                Width="130"
+                                Click="ChooseAlarmSound_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Notas">
+                <Grid Margin="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Notas do grupo ativo"
+                               FontWeight="Bold"
+                               Margin="0,0,0,8"/>
+                    <ListView Grid.Row="1"
+                              ItemsSource="{Binding Notes}"
+                              SelectedItem="{Binding SelectedNote, Mode=TwoWay}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Título" Width="150" DisplayMemberBinding="{Binding Title}"/>
+                                <GridViewColumn Header="Criada em" Width="140" DisplayMemberBinding="{Binding CreatedAtText}"/>
+                                <GridViewColumn Header="Autor" Width="140" DisplayMemberBinding="{Binding Author}"/>
+                                <GridViewColumn Header="Destinatário" Width="140" DisplayMemberBinding="{Binding Recipient}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <StackPanel Grid.Row="2"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                Margin="0,10,0,0">
+                        <Button Content="Atualizar"
+                                Width="110"
+                                Margin="0,0,8,0"
+                                Click="RefreshNotesButton_Click"/>
+                        <Button Content="Excluir nota"
+                                Width="120"
+                                Click="DeleteNoteFromList_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0,10,0,0">
+            <Button Content="Fechar"
+                    Width="110"
+                    IsCancel="True"
+                    Click="CloseButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
