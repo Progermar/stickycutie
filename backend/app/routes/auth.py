@@ -19,7 +19,6 @@ def login(payload: LoginRequest, db: Session = Depends(get_db)):
         )
 
     token = create_access_token({"sub": str(user.id), "email": user.email})
-    group_id = auth_crud.get_first_group_id(db, user.id)
 
     return LoginResponse(
         access_token=token,
@@ -27,6 +26,6 @@ def login(payload: LoginRequest, db: Session = Depends(get_db)):
             id=user.id,
             name=user.name,
             email=user.email,
-            group_id=group_id,
+            group_id=user.group_id,
         ),
     )
