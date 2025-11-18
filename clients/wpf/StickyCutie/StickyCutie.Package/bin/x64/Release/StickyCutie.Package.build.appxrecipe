@@ -1,0 +1,1465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DEXAWEB</Machine>
+    <WindowsUser>proge</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>12a3fcc3-8d5c-4047-80d3-ed9f01134fc7</PackageIdentityName>
+    <PackageIdentityPublisher>CN=StickyCutie</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\obj\x64\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath></WindowsSdkPath>
+    <LayoutDir>D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\bin\x64\Release\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\bin\x64\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\Images\StoreLogo.png">
+      <PackagePath>Images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\bin\x64\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\StickyCutie.Wpf.exe">
+      <PackagePath>StickyCutie.Wpf\StickyCutie.Wpf.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\StickyCutie.Wpf.dll">
+      <PackagePath>StickyCutie.Wpf\StickyCutie.Wpf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\StickyCutie.Wpf.deps.json">
+      <PackagePath>StickyCutie.Wpf\StickyCutie.Wpf.deps.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\StickyCutie.Wpf.runtimeconfig.json">
+      <PackagePath>StickyCutie.Wpf\StickyCutie.Wpf.runtimeconfig.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\Microsoft.CSharp.dll">
+      <PackagePath>StickyCutie.Wpf\Microsoft.CSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\Microsoft.VisualBasic.Core.dll">
+      <PackagePath>StickyCutie.Wpf\Microsoft.VisualBasic.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\Microsoft.Win32.Primitives.dll">
+      <PackagePath>StickyCutie.Wpf\Microsoft.Win32.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\Microsoft.Win32.Registry.dll">
+      <PackagePath>StickyCutie.Wpf\Microsoft.Win32.Registry.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.AppContext.dll">
+      <PackagePath>StickyCutie.Wpf\System.AppContext.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Buffers.dll">
+      <PackagePath>StickyCutie.Wpf\System.Buffers.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Collections.Concurrent.dll">
+      <PackagePath>StickyCutie.Wpf\System.Collections.Concurrent.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Collections.Immutable.dll">
+      <PackagePath>StickyCutie.Wpf\System.Collections.Immutable.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Collections.NonGeneric.dll">
+      <PackagePath>StickyCutie.Wpf\System.Collections.NonGeneric.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Collections.Specialized.dll">
+      <PackagePath>StickyCutie.Wpf\System.Collections.Specialized.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Collections.dll">
+      <PackagePath>StickyCutie.Wpf\System.Collections.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.ComponentModel.Annotations.dll">
+      <PackagePath>StickyCutie.Wpf\System.ComponentModel.Annotations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.ComponentModel.DataAnnotations.dll">
+      <PackagePath>StickyCutie.Wpf\System.ComponentModel.DataAnnotations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.ComponentModel.EventBasedAsync.dll">
+      <PackagePath>StickyCutie.Wpf\System.ComponentModel.EventBasedAsync.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.ComponentModel.Primitives.dll">
+      <PackagePath>StickyCutie.Wpf\System.ComponentModel.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.ComponentModel.TypeConverter.dll">
+      <PackagePath>StickyCutie.Wpf\System.ComponentModel.TypeConverter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.ComponentModel.dll">
+      <PackagePath>StickyCutie.Wpf\System.ComponentModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Configuration.dll">
+      <PackagePath>StickyCutie.Wpf\System.Configuration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Console.dll">
+      <PackagePath>StickyCutie.Wpf\System.Console.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Core.dll">
+      <PackagePath>StickyCutie.Wpf\System.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Data.Common.dll">
+      <PackagePath>StickyCutie.Wpf\System.Data.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Data.DataSetExtensions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Data.DataSetExtensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Data.dll">
+      <PackagePath>StickyCutie.Wpf\System.Data.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.Contracts.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.Contracts.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.Debug.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.Debug.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.DiagnosticSource.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.FileVersionInfo.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.FileVersionInfo.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.Process.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.Process.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.StackTrace.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.StackTrace.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.TextWriterTraceListener.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.TextWriterTraceListener.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.Tools.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.Tools.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.TraceSource.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.TraceSource.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.Tracing.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.Tracing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Drawing.Primitives.dll">
+      <PackagePath>StickyCutie.Wpf\System.Drawing.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Dynamic.Runtime.dll">
+      <PackagePath>StickyCutie.Wpf\System.Dynamic.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Formats.Asn1.dll">
+      <PackagePath>StickyCutie.Wpf\System.Formats.Asn1.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Formats.Tar.dll">
+      <PackagePath>StickyCutie.Wpf\System.Formats.Tar.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Globalization.Calendars.dll">
+      <PackagePath>StickyCutie.Wpf\System.Globalization.Calendars.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Globalization.Extensions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Globalization.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Globalization.dll">
+      <PackagePath>StickyCutie.Wpf\System.Globalization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.Compression.Brotli.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.Compression.Brotli.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.Compression.FileSystem.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.Compression.FileSystem.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.Compression.ZipFile.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.Compression.ZipFile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.Compression.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.Compression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.FileSystem.AccessControl.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.FileSystem.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.FileSystem.DriveInfo.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.FileSystem.DriveInfo.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.FileSystem.Primitives.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.FileSystem.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.FileSystem.Watcher.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.FileSystem.Watcher.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.FileSystem.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.FileSystem.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.IsolatedStorage.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.IsolatedStorage.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.MemoryMappedFiles.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.MemoryMappedFiles.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.Pipes.AccessControl.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.Pipes.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.Pipes.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.Pipes.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.UnmanagedMemoryStream.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.UnmanagedMemoryStream.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Linq.Expressions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Linq.Expressions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Linq.Parallel.dll">
+      <PackagePath>StickyCutie.Wpf\System.Linq.Parallel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Linq.Queryable.dll">
+      <PackagePath>StickyCutie.Wpf\System.Linq.Queryable.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Linq.dll">
+      <PackagePath>StickyCutie.Wpf\System.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Memory.dll">
+      <PackagePath>StickyCutie.Wpf\System.Memory.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.Http.Json.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.Http.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.Http.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.Http.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.HttpListener.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.HttpListener.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.Mail.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.Mail.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.NameResolution.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.NameResolution.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.NetworkInformation.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.NetworkInformation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.Ping.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.Ping.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.Primitives.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.Quic.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.Quic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.Requests.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.Requests.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.Security.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.Security.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.ServicePoint.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.ServicePoint.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.Sockets.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.Sockets.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.WebClient.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.WebClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.WebHeaderCollection.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.WebHeaderCollection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.WebProxy.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.WebProxy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.WebSockets.Client.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.WebSockets.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.WebSockets.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.WebSockets.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Net.dll">
+      <PackagePath>StickyCutie.Wpf\System.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Numerics.Vectors.dll">
+      <PackagePath>StickyCutie.Wpf\System.Numerics.Vectors.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Numerics.dll">
+      <PackagePath>StickyCutie.Wpf\System.Numerics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.ObjectModel.dll">
+      <PackagePath>StickyCutie.Wpf\System.ObjectModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Private.CoreLib.dll">
+      <PackagePath>StickyCutie.Wpf\System.Private.CoreLib.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Private.DataContractSerialization.dll">
+      <PackagePath>StickyCutie.Wpf\System.Private.DataContractSerialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Private.Uri.dll">
+      <PackagePath>StickyCutie.Wpf\System.Private.Uri.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Private.Xml.Linq.dll">
+      <PackagePath>StickyCutie.Wpf\System.Private.Xml.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Private.Xml.dll">
+      <PackagePath>StickyCutie.Wpf\System.Private.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Reflection.DispatchProxy.dll">
+      <PackagePath>StickyCutie.Wpf\System.Reflection.DispatchProxy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Reflection.Emit.ILGeneration.dll">
+      <PackagePath>StickyCutie.Wpf\System.Reflection.Emit.ILGeneration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Reflection.Emit.Lightweight.dll">
+      <PackagePath>StickyCutie.Wpf\System.Reflection.Emit.Lightweight.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Reflection.Emit.dll">
+      <PackagePath>StickyCutie.Wpf\System.Reflection.Emit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Reflection.Extensions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Reflection.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Reflection.Metadata.dll">
+      <PackagePath>StickyCutie.Wpf\System.Reflection.Metadata.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Reflection.Primitives.dll">
+      <PackagePath>StickyCutie.Wpf\System.Reflection.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Reflection.TypeExtensions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Reflection.TypeExtensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Reflection.dll">
+      <PackagePath>StickyCutie.Wpf\System.Reflection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Resources.Reader.dll">
+      <PackagePath>StickyCutie.Wpf\System.Resources.Reader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Resources.ResourceManager.dll">
+      <PackagePath>StickyCutie.Wpf\System.Resources.ResourceManager.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Resources.Writer.dll">
+      <PackagePath>StickyCutie.Wpf\System.Resources.Writer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.CompilerServices.VisualC.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.CompilerServices.VisualC.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.Extensions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.Handles.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.Handles.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.InteropServices.JavaScript.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.InteropServices.JavaScript.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.InteropServices.RuntimeInformation.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.InteropServices.RuntimeInformation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.InteropServices.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.InteropServices.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.Intrinsics.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.Intrinsics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.Loader.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.Loader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.Numerics.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.Numerics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.Serialization.Formatters.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.Serialization.Formatters.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.Serialization.Json.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.Serialization.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.Serialization.Primitives.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.Serialization.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.Serialization.Xml.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.Serialization.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.Serialization.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.Serialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Runtime.dll">
+      <PackagePath>StickyCutie.Wpf\System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.AccessControl.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Claims.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Claims.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Cryptography.Algorithms.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Cryptography.Algorithms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Cryptography.Cng.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Cryptography.Cng.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Cryptography.Csp.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Cryptography.Csp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Cryptography.Encoding.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Cryptography.Encoding.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Cryptography.OpenSsl.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Cryptography.OpenSsl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Cryptography.Primitives.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Cryptography.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Cryptography.X509Certificates.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Cryptography.X509Certificates.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Cryptography.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Cryptography.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Principal.Windows.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Principal.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Principal.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Principal.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.SecureString.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.SecureString.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.ServiceModel.Web.dll">
+      <PackagePath>StickyCutie.Wpf\System.ServiceModel.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.ServiceProcess.dll">
+      <PackagePath>StickyCutie.Wpf\System.ServiceProcess.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Text.Encoding.CodePages.dll">
+      <PackagePath>StickyCutie.Wpf\System.Text.Encoding.CodePages.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Text.Encoding.Extensions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Text.Encoding.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Text.Encoding.dll">
+      <PackagePath>StickyCutie.Wpf\System.Text.Encoding.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Text.Encodings.Web.dll">
+      <PackagePath>StickyCutie.Wpf\System.Text.Encodings.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Text.Json.dll">
+      <PackagePath>StickyCutie.Wpf\System.Text.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Text.RegularExpressions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Text.RegularExpressions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Threading.Channels.dll">
+      <PackagePath>StickyCutie.Wpf\System.Threading.Channels.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Threading.Overlapped.dll">
+      <PackagePath>StickyCutie.Wpf\System.Threading.Overlapped.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Threading.Tasks.Dataflow.dll">
+      <PackagePath>StickyCutie.Wpf\System.Threading.Tasks.Dataflow.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Threading.Tasks.Extensions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Threading.Tasks.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Threading.Tasks.Parallel.dll">
+      <PackagePath>StickyCutie.Wpf\System.Threading.Tasks.Parallel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Threading.Tasks.dll">
+      <PackagePath>StickyCutie.Wpf\System.Threading.Tasks.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Threading.Thread.dll">
+      <PackagePath>StickyCutie.Wpf\System.Threading.Thread.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Threading.ThreadPool.dll">
+      <PackagePath>StickyCutie.Wpf\System.Threading.ThreadPool.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Threading.Timer.dll">
+      <PackagePath>StickyCutie.Wpf\System.Threading.Timer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Threading.dll">
+      <PackagePath>StickyCutie.Wpf\System.Threading.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Transactions.Local.dll">
+      <PackagePath>StickyCutie.Wpf\System.Transactions.Local.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Transactions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Transactions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.ValueTuple.dll">
+      <PackagePath>StickyCutie.Wpf\System.ValueTuple.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Web.HttpUtility.dll">
+      <PackagePath>StickyCutie.Wpf\System.Web.HttpUtility.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Web.dll">
+      <PackagePath>StickyCutie.Wpf\System.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Windows.dll">
+      <PackagePath>StickyCutie.Wpf\System.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Xml.Linq.dll">
+      <PackagePath>StickyCutie.Wpf\System.Xml.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Xml.ReaderWriter.dll">
+      <PackagePath>StickyCutie.Wpf\System.Xml.ReaderWriter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Xml.Serialization.dll">
+      <PackagePath>StickyCutie.Wpf\System.Xml.Serialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Xml.XDocument.dll">
+      <PackagePath>StickyCutie.Wpf\System.Xml.XDocument.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Xml.XPath.XDocument.dll">
+      <PackagePath>StickyCutie.Wpf\System.Xml.XPath.XDocument.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Xml.XPath.dll">
+      <PackagePath>StickyCutie.Wpf\System.Xml.XPath.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Xml.XmlDocument.dll">
+      <PackagePath>StickyCutie.Wpf\System.Xml.XmlDocument.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Xml.XmlSerializer.dll">
+      <PackagePath>StickyCutie.Wpf\System.Xml.XmlSerializer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Xml.dll">
+      <PackagePath>StickyCutie.Wpf\System.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.dll">
+      <PackagePath>StickyCutie.Wpf\System.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\mscorlib.dll">
+      <PackagePath>StickyCutie.Wpf\mscorlib.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\netstandard.dll">
+      <PackagePath>StickyCutie.Wpf\netstandard.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\Accessibility.dll">
+      <PackagePath>StickyCutie.Wpf\Accessibility.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\DirectWriteForwarder.dll">
+      <PackagePath>StickyCutie.Wpf\DirectWriteForwarder.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\Microsoft.VisualBasic.Forms.dll">
+      <PackagePath>StickyCutie.Wpf\Microsoft.VisualBasic.Forms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\Microsoft.VisualBasic.dll">
+      <PackagePath>StickyCutie.Wpf\Microsoft.VisualBasic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\Microsoft.Win32.Registry.AccessControl.dll">
+      <PackagePath>StickyCutie.Wpf\Microsoft.Win32.Registry.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>StickyCutie.Wpf\Microsoft.Win32.SystemEvents.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationCore.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework-SystemCore.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework-SystemCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework-SystemData.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework-SystemData.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework-SystemDrawing.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework-SystemDrawing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework-SystemXml.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework-SystemXml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework-SystemXmlLinq.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework-SystemXmlLinq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework.Aero.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework.Aero.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework.Aero2.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework.Aero2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework.AeroLite.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework.AeroLite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework.Classic.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework.Classic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework.Luna.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework.Luna.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework.Royale.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework.Royale.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationFramework.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationFramework.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationUI.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationUI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ReachFramework.dll">
+      <PackagePath>StickyCutie.Wpf\ReachFramework.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.CodeDom.dll">
+      <PackagePath>StickyCutie.Wpf\System.CodeDom.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>StickyCutie.Wpf\System.Configuration.ConfigurationManager.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Design.dll">
+      <PackagePath>StickyCutie.Wpf\System.Design.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.EventLog.Messages.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.EventLog.Messages.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.EventLog.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.EventLog.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Diagnostics.PerformanceCounter.dll">
+      <PackagePath>StickyCutie.Wpf\System.Diagnostics.PerformanceCounter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.DirectoryServices.dll">
+      <PackagePath>StickyCutie.Wpf\System.DirectoryServices.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Drawing.Common.dll">
+      <PackagePath>StickyCutie.Wpf\System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Drawing.Design.dll">
+      <PackagePath>StickyCutie.Wpf\System.Drawing.Design.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Drawing.dll">
+      <PackagePath>StickyCutie.Wpf\System.Drawing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.Packaging.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.Packaging.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Printing.dll">
+      <PackagePath>StickyCutie.Wpf\System.Printing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Resources.Extensions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Resources.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Cryptography.Pkcs.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Cryptography.Pkcs.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Cryptography.ProtectedData.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Cryptography.Xml.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Cryptography.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Security.Permissions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Security.Permissions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Threading.AccessControl.dll">
+      <PackagePath>StickyCutie.Wpf\System.Threading.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Windows.Controls.Ribbon.dll">
+      <PackagePath>StickyCutie.Wpf\System.Windows.Controls.Ribbon.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Windows.Extensions.dll">
+      <PackagePath>StickyCutie.Wpf\System.Windows.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Windows.Forms.Design.Editors.dll">
+      <PackagePath>StickyCutie.Wpf\System.Windows.Forms.Design.Editors.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Windows.Forms.Design.dll">
+      <PackagePath>StickyCutie.Wpf\System.Windows.Forms.Design.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Windows.Forms.Primitives.dll">
+      <PackagePath>StickyCutie.Wpf\System.Windows.Forms.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Windows.Forms.dll">
+      <PackagePath>StickyCutie.Wpf\System.Windows.Forms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Windows.Input.Manipulations.dll">
+      <PackagePath>StickyCutie.Wpf\System.Windows.Input.Manipulations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Windows.Presentation.dll">
+      <PackagePath>StickyCutie.Wpf\System.Windows.Presentation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.Xaml.dll">
+      <PackagePath>StickyCutie.Wpf\System.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\UIAutomationClient.dll">
+      <PackagePath>StickyCutie.Wpf\UIAutomationClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\UIAutomationClientSideProviders.dll">
+      <PackagePath>StickyCutie.Wpf\UIAutomationClientSideProviders.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\UIAutomationProvider.dll">
+      <PackagePath>StickyCutie.Wpf\UIAutomationProvider.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\UIAutomationTypes.dll">
+      <PackagePath>StickyCutie.Wpf\UIAutomationTypes.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\WindowsBase.dll">
+      <PackagePath>StickyCutie.Wpf\WindowsBase.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\WindowsFormsIntegration.dll">
+      <PackagePath>StickyCutie.Wpf\WindowsFormsIntegration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\Microsoft.DiaSymReader.Native.amd64.dll">
+      <PackagePath>StickyCutie.Wpf\Microsoft.DiaSymReader.Native.amd64.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\System.IO.Compression.Native.dll">
+      <PackagePath>StickyCutie.Wpf\System.IO.Compression.Native.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\clretwrc.dll">
+      <PackagePath>StickyCutie.Wpf\clretwrc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\clrgc.dll">
+      <PackagePath>StickyCutie.Wpf\clrgc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\clrjit.dll">
+      <PackagePath>StickyCutie.Wpf\clrjit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\coreclr.dll">
+      <PackagePath>StickyCutie.Wpf\coreclr.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\createdump.exe">
+      <PackagePath>StickyCutie.Wpf\createdump.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\hostfxr.dll">
+      <PackagePath>StickyCutie.Wpf\hostfxr.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\hostpolicy.dll">
+      <PackagePath>StickyCutie.Wpf\hostpolicy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\mscordaccore.dll">
+      <PackagePath>StickyCutie.Wpf\mscordaccore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\mscordaccore_amd64_amd64_8.0.2225.52707.dll">
+      <PackagePath>StickyCutie.Wpf\mscordaccore_amd64_amd64_8.0.2225.52707.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\mscordbi.dll">
+      <PackagePath>StickyCutie.Wpf\mscordbi.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\mscorrc.dll">
+      <PackagePath>StickyCutie.Wpf\mscorrc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\msquic.dll">
+      <PackagePath>StickyCutie.Wpf\msquic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\D3DCompiler_47_cor3.dll">
+      <PackagePath>StickyCutie.Wpf\D3DCompiler_47_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PenImc_cor3.dll">
+      <PackagePath>StickyCutie.Wpf\PenImc_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\PresentationNative_cor3.dll">
+      <PackagePath>StickyCutie.Wpf\PresentationNative_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\vcruntime140_cor3.dll">
+      <PackagePath>StickyCutie.Wpf\vcruntime140_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\wpfgfx_cor3.dll">
+      <PackagePath>StickyCutie.Wpf\wpfgfx_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\cs\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\cs\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\de\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\de\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\es\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\es\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\fr\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\fr\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\it\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\it\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ja\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ja\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ko\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ko\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pl\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pl\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\pt-BR\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\pt-BR\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\ru\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\ru\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\tr\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\tr\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hans\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hans\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\PresentationCore.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\PresentationFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\PresentationUI.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\ReachFramework.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\System.Windows.Forms.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\System.Xaml.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\UIAutomationClient.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\UIAutomationProvider.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\UIAutomationTypes.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\WindowsBase.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\zh-Hant\WindowsFormsIntegration.resources.dll">
+      <PackagePath>StickyCutie.Wpf\zh-Hant\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\Microsoft.Data.Sqlite.dll">
+      <PackagePath>StickyCutie.Wpf\Microsoft.Data.Sqlite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>StickyCutie.Wpf\SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\SQLitePCLRaw.core.dll">
+      <PackagePath>StickyCutie.Wpf\SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>StickyCutie.Wpf\SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\stickycutie\clients\wpf\StickyCutie.Wpf\bin\x64\Release\net8.0-windows\win-x64\msixpublish\e_sqlite3.dll">
+      <PackagePath>StickyCutie.Wpf\e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

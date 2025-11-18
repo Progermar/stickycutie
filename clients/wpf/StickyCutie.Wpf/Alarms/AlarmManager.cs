@@ -15,6 +15,7 @@ sealed class AlarmManager
 {
     readonly DatabaseService _database;
     readonly DispatcherTimer _timer;
+    readonly EventHandler _tickHandler;
     readonly HashSet<string> _activeAlerts = new();
     readonly MediaPlayer _mediaPlayer = new();
     readonly string[] _alarmSoundFolders;
@@ -40,7 +41,8 @@ sealed class AlarmManager
             .Distinct(StringComparer.OrdinalIgnoreCase)
             .ToArray();
         _timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1.0) };
-        _timer.Tick += async (_, _) => await CheckAsync();
+        _tickHandler = async (_, _) => await CheckAsync();
+        _timer.Tick += _tickHandler;
         _timer.Start();
         _ = LoadInitialSoundAsync();
         if (_pendingCustomSound != null)
@@ -53,6 +55,16 @@ sealed class AlarmManager
     public static void Initialize(DatabaseService database)
     {
         _instance ??= new AlarmManager(database);
+    }
+
+    public static void Shutdown()
+    {
+        if (_instance == null) return;
+        _instance._timer.Stop();
+        _instance._timer.Tick -= _instance._tickHandler;
+        _instance._mediaPlayer.Stop();
+        _instance._mediaPlayer.Close();
+        _instance = null;
     }
 
     public static void SetCustomSound(string? path)

@@ -66,3 +66,17 @@ class SyncEvent(Base):
     user_id = Column(Integer, ForeignKey("users.id"))
     event_type = Column(String(50))   # created, updated, deleted
     updated_at = Column(DateTime, default=datetime.utcnow)
+
+
+class GroupInvitation(Base):
+    __tablename__ = "group_invitations"
+
+    id = Column(Integer, primary_key=True)
+    group_id = Column(Integer, ForeignKey("groups.id", ondelete="CASCADE"), nullable=False)
+    email = Column(String(200))
+    token = Column(String(64), unique=True, index=True, nullable=False)
+    status = Column(String(20), default="pending")
+    expires_at = Column(DateTime)
+    created_by_user_id = Column(Integer, ForeignKey("users.id", ondelete="SET NULL"))
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)

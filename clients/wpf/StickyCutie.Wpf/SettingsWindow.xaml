@@ -19,6 +19,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <StackPanel>
                         <TextBlock x:Name="GroupSummaryText"
@@ -45,10 +46,48 @@
                                 Orientation="Horizontal"
                                 HorizontalAlignment="Right"
                                 Margin="0,8,0,0">
+                        <Button Content="Entrar com código"
+                                Width="140"
+                                Margin="0,0,6,0"
+                                Click="JoinWithCode_Click"/>
                         <Button Content="Novo" Width="70" Click="CreateGroup_Click" Margin="0,0,6,0"/>
                         <Button Content="Editar" Width="70" Click="EditGroup_Click" Margin="0,0,6,0"/>
                         <Button Content="Excluir" Width="70" Click="DeleteGroup_Click" Margin="0,0,6,0"/>
                         <Button Content="Definir ativo" Width="110" Click="SetActiveGroup_Click"/>
+                    </StackPanel>
+                    <StackPanel x:Name="InvitePanel"
+                                Grid.Row="3"
+                                Margin="0,12,0,0">
+                        <TextBlock Text="Convites pendentes"
+                                   FontWeight="Bold"
+                                   Margin="0,0,0,6"/>
+                        <ListView ItemsSource="{Binding Invites}"
+                                  SelectedItem="{Binding SelectedInvite, Mode=TwoWay}"
+                                  Height="120">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Token" Width="110" DisplayMemberBinding="{Binding Token}"/>
+                                    <GridViewColumn Header="E-mail" Width="140" DisplayMemberBinding="{Binding Email}"/>
+                                    <GridViewColumn Header="Expira" Width="120" DisplayMemberBinding="{Binding ExpiresAtText}"/>
+                                    <GridViewColumn Header="Status" Width="90" DisplayMemberBinding="{Binding Status}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Right"
+                                    Margin="0,8,0,0">
+                            <Button Content="Gerar convite"
+                                    Width="120"
+                                    Margin="0,0,6,0"
+                                    Click="GenerateInvite_Click"/>
+                            <Button Content="Copiar token"
+                                    Width="110"
+                                    Margin="0,0,6,0"
+                                    Click="CopyInviteToken_Click"/>
+                            <Button Content="Revogar"
+                                    Width="90"
+                                    Click="RevokeInvite_Click"/>
+                        </StackPanel>
                     </StackPanel>
                 </Grid>
             </TabItem>
@@ -154,6 +193,12 @@
                     Orientation="Horizontal"
                     HorizontalAlignment="Right"
                     Margin="0,10,0,0">
+            <Button x:Name="ResetButton"
+                    Content="Resetar sistema"
+                    Width="140"
+                    Visibility="Collapsed"
+                    Margin="0,0,8,0"
+                    Click="ResetButton_Click"/>
             <Button Content="Fechar"
                     Width="110"
                     IsCancel="True"

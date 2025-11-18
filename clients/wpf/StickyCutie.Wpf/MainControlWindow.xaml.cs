@@ -13,29 +13,8 @@ public partial class MainControlWindow : Window
 
     void SettingsButton_Click(object sender, RoutedEventArgs e)
     {
-        if (!App.IsCurrentAuthorAdmin)
-        {
-            MessageBox.Show("Somente usuários administradores podem abrir as configurações globais. Peça ao administrador atual para conceder acesso.", "StickyCutie", MessageBoxButton.OK, MessageBoxImage.Information);
-            return;
-        }
-
-        if (!App.IsAdminSessionAuthenticated)
-        {
-            var auth = new AdminPasswordWindow
-            {
-                Owner = this
-            };
-
-            if (auth.ShowDialog() != true)
-            {
-                return;
-            }
-        }
-
-        var settings = new SettingsWindow();
-        settings.Owner = this;
-        settings.ShowDialog();
-        App.InvalidateAdminSession();
+        var requireAuth = !string.IsNullOrWhiteSpace(App.CurrentGroupId);
+        App.Current.ShowSettingsDialog(requireAuth);
     }
 
     void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

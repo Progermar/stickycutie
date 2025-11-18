@@ -1,20 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.2.0
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clients", "clients", "{9123F88B-E531-3118-42D7-ED8CEF4BD00E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wpf", "wpf", "{F1CD96C4-1E40-B66E-15FB-22430AC8370E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickyCutie.Wpf", "clients\wpf\StickyCutie.Wpf\StickyCutie.Wpf.csproj", "{2AF08D7C-28B6-45E6-CB3D-2902DDED4C8A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wpf_a", "wpf_a", "{E1A2121B-4A42-7BA3-2685-6DA028BF492A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickyCutie.Wpf", "clients\wpf_a\StickyCutie.Wpf\StickyCutie.Wpf.csproj", "{31121046-8EF8-7E1E-3316-8E2627EC5BAA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wpf_backup_pre_a", "wpf_backup_pre_a", "{647CF045-CF96-5C0D-6BA4-C448900C86EF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickyCutie.Wpf", "clients\wpf_backup_pre_a\StickyCutie.Wpf\StickyCutie.Wpf.csproj", "{EFC59155-7ED3-0CA9-AB54-9F13BF095300}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StickyCutie.Wpf", "clients\wpf\StickyCutie.Wpf\StickyCutie.Wpf.csproj", "{11111111-2222-3333-4444-555555555555}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,31 +10,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2AF08D7C-28B6-45E6-CB3D-2902DDED4C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AF08D7C-28B6-45E6-CB3D-2902DDED4C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AF08D7C-28B6-45E6-CB3D-2902DDED4C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AF08D7C-28B6-45E6-CB3D-2902DDED4C8A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31121046-8EF8-7E1E-3316-8E2627EC5BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31121046-8EF8-7E1E-3316-8E2627EC5BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31121046-8EF8-7E1E-3316-8E2627EC5BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31121046-8EF8-7E1E-3316-8E2627EC5BAA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFC59155-7ED3-0CA9-AB54-9F13BF095300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFC59155-7ED3-0CA9-AB54-9F13BF095300}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFC59155-7ED3-0CA9-AB54-9F13BF095300}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFC59155-7ED3-0CA9-AB54-9F13BF095300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11111111-2222-3333-4444-555555555555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11111111-2222-3333-4444-555555555555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11111111-2222-3333-4444-555555555555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11111111-2222-3333-4444-555555555555}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{F1CD96C4-1E40-B66E-15FB-22430AC8370E} = {9123F88B-E531-3118-42D7-ED8CEF4BD00E}
-		{2AF08D7C-28B6-45E6-CB3D-2902DDED4C8A} = {F1CD96C4-1E40-B66E-15FB-22430AC8370E}
-		{E1A2121B-4A42-7BA3-2685-6DA028BF492A} = {9123F88B-E531-3118-42D7-ED8CEF4BD00E}
-		{31121046-8EF8-7E1E-3316-8E2627EC5BAA} = {E1A2121B-4A42-7BA3-2685-6DA028BF492A}
-		{647CF045-CF96-5C0D-6BA4-C448900C86EF} = {9123F88B-E531-3118-42D7-ED8CEF4BD00E}
-		{EFC59155-7ED3-0CA9-AB54-9F13BF095300} = {647CF045-CF96-5C0D-6BA4-C448900C86EF}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4D137517-6118-4C48-8D0D-EBACE6CDF7D9}
 	EndGlobalSection
 EndGlobal

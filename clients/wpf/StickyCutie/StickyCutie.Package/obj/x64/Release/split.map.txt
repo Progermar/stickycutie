@@ -1,0 +1,13 @@
+﻿[ResourceMetadata]
+"ResourceDimensions"		"scale-200"
+"ResourceDimensions"		"language-pt-br"
+
+[Files]
+"D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\obj\x64\Release\split.pri"			"resources.pri"
+"D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\obj\x64\Release\PackageLayout\Images\Wide310x150Logo.scale-200.png"			"Images\Wide310x150Logo.scale-200.png"
+"D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\obj\x64\Release\PackageLayout\Images\StoreLogo.png"			"Images\StoreLogo.png"
+"D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\obj\x64\Release\PackageLayout\Images\Square44x44Logo.scale-200.png"			"Images\Square44x44Logo.scale-200.png"
+"D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\obj\x64\Release\PackageLayout\Images\Square44x44Logo.targetsize-24_altform-unplated.png"			"Images\Square44x44Logo.targetsize-24_altform-unplated.png"
+"D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\obj\x64\Release\PackageLayout\Images\Square150x150Logo.scale-200.png"			"Images\Square150x150Logo.scale-200.png"
+"D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\obj\x64\Release\PackageLayout\Images\SplashScreen.scale-200.png"			"Images\SplashScreen.scale-200.png"
+"D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\obj\x64\Release\PackageLayout\Images\LockScreenLogo.scale-200.png"			"Images\LockScreenLogo.scale-200.png"

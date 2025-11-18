@@ -7,18 +7,13 @@ namespace StickyCutie.Wpf.Services;
 
 static class ConfigService
 {
+    public const string DefaultApiUrl = "https://stickycutie.dexaweb.com.br/";
     static readonly Lazy<string> _apiUrl = new(Normalize);
 
     public static string GetApiUrl() => _apiUrl.Value;
 
     static string Normalize()
     {
-        var env = Environment.GetEnvironmentVariable("STICKYCUTIE_API_URL");
-        if (!string.IsNullOrWhiteSpace(env))
-        {
-            return EnsureTrailingSlash(env.Trim());
-        }
-
         var filePath = Path.Combine(AppContext.BaseDirectory, "stickycutie_settings.json");
         if (File.Exists(filePath))
         {
@@ -37,7 +32,7 @@ static class ConfigService
             }
         }
 
-        return "http://127.0.0.1:8000/";
+        return DefaultApiUrl;
     }
 
     static string EnsureTrailingSlash(string url)

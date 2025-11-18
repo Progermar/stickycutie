@@ -1,0 +1,2 @@
+MainPackage=D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\bin\x64\Release\StickyCutie.Package_1.0.6.0_x64.msix
+SymbolPackage=D:\stickycutie\clients\wpf\StickyCutie\StickyCutie.Package\obj\x64\Release\Symbols\StickyCutie.Package_1.0.6.0_x64.appxsym

@@ -34,6 +34,7 @@ public sealed class DatabaseService
                 email TEXT,
                 phone TEXT,
                 password_hash TEXT,
+                group_id TEXT,
                 created_at INTEGER,
                 updated_at INTEGER,
                 is_admin INTEGER
@@ -117,6 +118,7 @@ public sealed class DatabaseService
     static async Task EnsureColumnsAsync(SqliteConnection connection)
     {
         await TryAddColumnAsync(connection, "users", "is_admin INTEGER DEFAULT 0");
+        await TryAddColumnAsync(connection, "users", "group_id TEXT");
         await TryAddColumnAsync(connection, "notes_local", "created_by_user_id TEXT");
     }
 
@@ -140,13 +142,14 @@ public sealed class DatabaseService
     {
         const string sql =
             """
-            INSERT INTO users (id, name, email, phone, password_hash, created_at, updated_at, is_admin)
-            VALUES (@id, @name, @email, @phone, @password_hash, @created_at, @updated_at, @is_admin)
+            INSERT INTO users (id, name, email, phone, password_hash, group_id, created_at, updated_at, is_admin)
+            VALUES (@id, @name, @email, @phone, @password_hash, @group_id, @created_at, @updated_at, @is_admin)
             ON CONFLICT(id) DO UPDATE SET
                 name=@name,
                 email=@email,
                 phone=@phone,
                 password_hash=@password_hash,
+                group_id=@group_id,
                 created_at=@created_at,
                 updated_at=@updated_at,
                 is_admin=@is_admin;
@@ -158,6 +161,7 @@ public sealed class DatabaseService
             ("@email", user.Email),
             ("@phone", user.Phone),
             ("@password_hash", user.PasswordHash),
+            ("@group_id", user.GroupId),
             ("@created_at", user.CreatedAt),
             ("@updated_at", user.UpdatedAt),
             ("@is_admin", BoolToInt(user.IsAdmin)));
@@ -210,9 +214,10 @@ public sealed class DatabaseService
         Email = reader.IsDBNull(2) ? null : reader.GetString(2),
         Phone = reader.IsDBNull(3) ? null : reader.GetString(3),
         PasswordHash = reader.IsDBNull(4) ? null : reader.GetString(4),
-        CreatedAt = reader.IsDBNull(5) ? 0 : reader.GetInt64(5),
-        UpdatedAt = reader.IsDBNull(6) ? 0 : reader.GetInt64(6),
-        IsAdmin = reader.IsDBNull(7) ? false : IntToBool(reader.GetInt32(7))
+        GroupId = reader.IsDBNull(5) ? null : reader.GetString(5),
+        CreatedAt = reader.IsDBNull(6) ? 0 : reader.GetInt64(6),
+        UpdatedAt = reader.IsDBNull(7) ? 0 : reader.GetInt64(7),
+        IsAdmin = reader.IsDBNull(8) ? false : IntToBool(reader.GetInt32(8))
     };
 
     #endregion

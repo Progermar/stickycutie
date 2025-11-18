@@ -31,6 +31,20 @@ class SyncService
         _timer.Start();
     }
 
+    public Task StopAsync()
+    {
+        _timer.Stop();
+        return WaitForIdleAsync();
+    }
+
+    async Task WaitForIdleAsync()
+    {
+        while (_running)
+        {
+            await Task.Delay(50);
+        }
+    }
+
     async Task<long> GetInitialSinceAsync()
     {
         var notes = await _database.GetNotesAsync();

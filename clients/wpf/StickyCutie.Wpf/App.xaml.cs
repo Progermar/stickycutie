@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
+using Microsoft.Data.Sqlite;
 using StickyCutie.Wpf.Data;
 using StickyCutie.Wpf.Alarms;
 using StickyCutie.Wpf.Services;
@@ -15,12 +17,13 @@ public partial class App : Application
     public static DatabaseService Database { get; } = new();
     public static new App Current => (App)Application.Current;
     public NoteLocal? LastCreatedNote { get; private set; }
-public static string CurrentRecipientId { get; private set; } = string.Empty;
-public static string CurrentGroupId { get; private set; } = string.Empty;
-public static string CurrentAuthorId { get; private set; } = string.Empty;
-public static bool IsCurrentAuthorAdmin { get; private set; }
-public static bool IsAdminSessionAuthenticated { get; private set; }
-public static string? CurrentAuthorPasswordHash { get; private set; }
+    public static string CurrentRecipientId { get; private set; } = string.Empty;
+    public static string CurrentGroupId { get; private set; } = string.Empty;
+    public static string CurrentAuthorId { get; private set; } = string.Empty;
+    public static bool IsCurrentAuthorAdmin { get; private set; }
+    public static bool IsAdminSessionAuthenticated { get; private set; }
+    public static string? CurrentAuthorPasswordHash { get; private set; }
+    public static string? CurrentAccessToken { get; private set; }
 
     readonly HashSet<MainWindow> _noteWindows = new();
     MainControlWindow? _controlWindow;
@@ -60,15 +63,28 @@ public static string? CurrentAuthorPasswordHash { get; private set; }
         if (_ranSetupThisSession)
         {
             _ranSetupThisSession = false;
-            var message = string.IsNullOrWhiteSpace(CurrentGroupId)
-                ? "ConfiguraÃƒÂ§ÃƒÂ£o inicial concluÃƒÂ­da! Use o botÃƒÂ£o Ã¢Å¡â„¢ para cadastrar e ativar o primeiro grupo antes de criar notas."
-                : "ConfiguraÃƒÂ§ÃƒÂ£o inicial concluÃƒÂ­da! Use o botÃƒÂ£o Ã¢Å¡â„¢ para gerenciar grupos e usuÃƒÂ¡rios.";
-            MessageBox.Show(message, "StickyCutie", MessageBoxButton.OK, MessageBoxImage.Information);
-            _controlWindow.Activate();
+            if (string.IsNullOrWhiteSpace(CurrentGroupId))
+            {
+                var choice = MessageBox.Show("Configuração inicial concluída! Deseja entrar em um grupo existente usando um código de convite?", "StickyCutie", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (choice == MessageBoxResult.Yes)
+                {
+                    ShowJoinGroupDialog();
+                }
+                else
+                {
+                    ShowSettingsDialog(requireAuthentication: false);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Configuração inicial concluída! Use o botão de configurações para gerenciar grupos e usuários.", "StickyCutie", MessageBoxButton.OK, MessageBoxImage.Information);
+                _controlWindow.Activate();
+            }
         }
         else if (string.IsNullOrWhiteSpace(CurrentGroupId))
         {
-            MessageBox.Show("Nenhum grupo ativo. Abra as ConfiguraÃƒÂ§ÃƒÂµes (Ã¢Å¡â„¢) para criar e ativar um grupo antes de usar as notas.", "StickyCutie", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Nenhum grupo ativo. Abriremos as configurações para criar ou entrar em um grupo.", "StickyCutie", MessageBoxButton.OK, MessageBoxImage.Information);
+            ShowSettingsDialog(requireAuthentication: false);
         }
     }
 
@@ -356,6 +372,47 @@ public static string? CurrentAuthorPasswordHash { get; private set; }
         SetAdminSession(false);
     }
 
+    public void SetAccessToken(string? token)
+    {
+        CurrentAccessToken = token;
+        ApiService.SetAccessToken(token);
+    }
+
+    public void ShowSettingsDialog(bool requireAuthentication = true)
+    {
+        if (requireAuthentication && !IsCurrentAuthorAdmin)
+        {
+            MessageBox.Show("Somente administradores podem abrir as configurações globais.", "StickyCutie", MessageBoxButton.OK, MessageBoxImage.Information);
+            return;
+        }
+
+        if (requireAuthentication)
+        {
+            AuthenticateAdminSession();
+        }
+
+        var window = new SettingsWindow();
+        if (_controlWindow != null && _controlWindow.IsVisible)
+        {
+            window.Owner = _controlWindow;
+        }
+        window.ShowDialog();
+
+        if (requireAuthentication)
+        {
+            InvalidateAdminSession();
+        }
+    }
+
+    public void ShowJoinGroupDialog()
+    {
+        var join = new JoinGroupWindow
+        {
+            Owner = _controlWindow
+        };
+        join.ShowDialog();
+    }
+
     async Task EnsureDefaultNoteAsync()
     {
         if (string.IsNullOrWhiteSpace(CurrentGroupId) || string.IsNullOrWhiteSpace(CurrentRecipientId) || string.IsNullOrWhiteSpace(CurrentAuthorId)) return;
@@ -365,8 +422,112 @@ public static string? CurrentAuthorPasswordHash { get; private set; }
             await CreateAndShowNoteAsync();
         }
     }
-}
 
+    public async Task ResetEnvironmentAsync()
+    {
+        await (_syncService?.StopAsync() ?? Task.CompletedTask);
+        AlarmManager.Shutdown();
+        CloseAllNotes();
+
+        try
+        {
+            await DeleteLocalDataAsync();
+        }
+        catch (Exception ex)
+        {
+            throw new InvalidOperationException($"Falha ao limpar os dados locais: {ex.Message}", ex);
+        }
+
+        try
+        {
+            await ApiService.ResetRemoteAsync();
+        }
+        catch (Exception ex)
+        {
+            throw new InvalidOperationException($"Dados locais apagados, mas não foi possível resetar o servidor: {ex.Message}", ex);
+        }
+
+        MessageBox.Show("Reset concluído. O aplicativo será reiniciado.", "StickyCutie", MessageBoxButton.OK, MessageBoxImage.Information);
+        Shutdown();
+    }
+
+    public async Task ApplyJoinedContextAsync(ApiService.GroupDto groupDto, ApiService.UserDto userDto, string accessToken)
+    {
+        var now = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+        var group = new GroupLocal
+        {
+            Id = groupDto.Id,
+            Name = groupDto.Name,
+            Description = groupDto.Description,
+            JoinedAt = groupDto.CreatedAt == default ? now : new DateTimeOffset(DateTime.SpecifyKind(groupDto.CreatedAt, DateTimeKind.Utc)).ToUnixTimeSeconds(),
+            UpdatedAt = groupDto.UpdatedAt.HasValue ? new DateTimeOffset(DateTime.SpecifyKind(groupDto.UpdatedAt.Value, DateTimeKind.Utc)).ToUnixTimeSeconds() : now
+        };
+
+        var user = new UserLocal
+        {
+            Id = userDto.Id,
+            Name = userDto.Name,
+            Email = userDto.Email,
+            Phone = userDto.Phone,
+            GroupId = userDto.GroupId,
+            CreatedAt = userDto.CreatedAt == default ? now : new DateTimeOffset(DateTime.SpecifyKind(userDto.CreatedAt, DateTimeKind.Utc)).ToUnixTimeSeconds(),
+            UpdatedAt = userDto.UpdatedAt == default ? now : new DateTimeOffset(DateTime.SpecifyKind(userDto.UpdatedAt, DateTimeKind.Utc)).ToUnixTimeSeconds(),
+            IsAdmin = userDto.IsAdmin
+        };
+
+        await Database.UpsertGroupAsync(group);
+        await Database.UpsertUserAsync(user);
+        await Database.SetSettingAsync("current_author_id", user.Id);
+        await Database.SetSettingAsync("current_user_id", user.Id);
+        await Database.SetSettingAsync("current_group_id", group.Id);
+
+        ApplyAuthor(user);
+        ApplyCurrentGroup(group);
+        SetAccessToken(accessToken);
+        await ChangeGroupAsync(group.Id);
+        await SetRecipientUserAsync(user.Id);
+    }
+
+    static async Task DeleteLocalDataAsync()
+    {
+        var baseFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "StickyCutie");
+        var dbPath = Path.Combine(baseFolder, "stickycutie.db");
+        try
+        {
+            SqliteConnection.ClearAllPools();
+        }
+        catch
+        {
+            // ignore
+        }
+
+        if (File.Exists(dbPath))
+        {
+            const int maxAttempts = 5;
+            for (var attempt = 0; attempt < maxAttempts; attempt++)
+            {
+                try
+                {
+                    File.Delete(dbPath);
+                    break;
+                }
+                catch when (attempt < maxAttempts - 1)
+                {
+                    await Task.Delay(200);
+                }
+            }
+        }
+
+        foreach (var sub in new[] { "images", "alarms" })
+        {
+            var path = Path.Combine(baseFolder, sub);
+            if (Directory.Exists(path))
+            {
+                Directory.Delete(path, recursive: true);
+            }
+        }
+    }
+}
 
 
 

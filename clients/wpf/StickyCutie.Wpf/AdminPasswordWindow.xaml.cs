@@ -33,5 +33,16 @@ public partial class AdminPasswordWindow : Window
             AdminPasswordBox.Focus();
         }
     }
+
+    async void ResetButton_Click(object sender, RoutedEventArgs e)
+    {
+        if (MessageBox.Show("Isso apagará todos os dados locais e remotos. Deseja continuar?", "Resetar sistema", MessageBoxButton.YesNo, MessageBoxImage.Warning) != MessageBoxResult.Yes)
+        {
+            return;
+        }
+
+        Hide();
+        await App.Current.ResetEnvironmentAsync();
+    }
 }
 

@@ -122,3 +122,7 @@ D:\stickycutie\clients\wpf\StickyCutie.Wpf\obj\Debug\net8.0-windows\CreateNoteAd
 D:\stickycutie\clients\wpf\StickyCutie.Wpf\obj\Debug\net8.0-windows\CreateNoteChoiceWindow.g.cs
 D:\stickycutie\clients\wpf\StickyCutie.Wpf\obj\Debug\net8.0-windows\CreateNoteTitleWindow.baml
 D:\stickycutie\clients\wpf\StickyCutie.Wpf\obj\Debug\net8.0-windows\CreateNoteTitleWindow.g.cs
+D:\stickycutie\clients\wpf\StickyCutie.Wpf\obj\Debug\net8.0-windows\InviteDialogWindow.baml
+D:\stickycutie\clients\wpf\StickyCutie.Wpf\obj\Debug\net8.0-windows\JoinGroupWindow.baml
+D:\stickycutie\clients\wpf\StickyCutie.Wpf\obj\Debug\net8.0-windows\InviteDialogWindow.g.cs
+D:\stickycutie\clients\wpf\StickyCutie.Wpf\obj\Debug\net8.0-windows\JoinGroupWindow.g.cs

@@ -7,6 +7,7 @@ public partial class UserEditorWindow : Window
     readonly bool _requirePassword;
     readonly bool _allowAdminToggle;
     string? _passwordHash;
+    public string? PlainPassword { get; private set; }
 
     public string UserName => NameTextBox.Text.Trim();
     public string UserEmail => EmailTextBox.Text.Trim();
@@ -60,6 +61,7 @@ public partial class UserEditorWindow : Window
                 return;
             }
 
+            PlainPassword = password;
             _passwordHash = SecurityHelper.Hash(password);
         }
 
