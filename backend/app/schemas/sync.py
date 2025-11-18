@@ -1,29 +1,34 @@
-from datetime import datetime
-from typing import List
+from typing import List, Optional
 
 from pydantic import BaseModel
 
 
 class SyncSendRequest(BaseModel):
-    note_id: int
-    user_id: int
-    group_id: int
+    id: str
+    title: Optional[str] = None
     content: str
-    created_at: datetime
+    updated_at: int
+    target_user_id: str
+    created_by_user_id: str
+    group_id: str
+    deleted: bool = False
 
 
 class RemoteNote(BaseModel):
-    note_id: int
-    user_id: int
-    group_id: int
+    id: str
+    title: Optional[str] = None
     content: str
-    created_at: datetime
+    updated_at: int
+    created_by_user_id: str
+    target_user_id: str
+    group_id: str
+    deleted: bool = False
 
 
 class SyncEventResponse(BaseModel):
-    event_id: int
+    event_id: str
     note: RemoteNote
 
 
 class AckRequest(BaseModel):
-    event_ids: List[int]
+    event_ids: List[str]

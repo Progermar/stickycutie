@@ -1,44 +1,54 @@
-from datetime import datetime
-from typing import Iterable, List
+from datetime import datetime, timezone
+from typing import Iterable, List, Optional
 
 from sqlalchemy.orm import Session
 
 from app import models
+from app.schemas.sync import SyncSendRequest
 
 
-def upsert_note(db: Session, note_id: int, user_id: int, group_id: int, content: str, created_at: datetime) -> models.Note:
-    note = db.query(models.Note).filter(models.Note.id == note_id).first()
+def _to_int(value: Optional[str]) -> Optional[int]:
+    if value is None:
+        return None
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def _to_datetime(timestamp: int) -> datetime:
+    return datetime.fromtimestamp(timestamp, tz=timezone.utc)
+
+
+def upsert_note(db: Session, payload: SyncSendRequest) -> models.Note:
+    note = (
+        db.query(models.Note)
+        .filter(models.Note.geometry == payload.id)
+        .one_or_none()
+    )
     if note is None:
         note = models.Note(
-            id=note_id,
-            group_id=group_id,
-            created_by_user_id=user_id,
-            source_user_id=user_id,
-            title=None,
-            content=content,
-            geometry=None,
-            alarm_at=None,
-            snooze_until=None,
-            deleted=False,
-            updated_at=created_at,
+            geometry=payload.id,
         )
         db.add(note)
-    else:
-        note.group_id = group_id
-        note.created_by_user_id = user_id
-        note.source_user_id = user_id
-        note.content = content
-        note.updated_at = created_at
+
+    note.title = payload.title
+    note.content = payload.content
+    note.deleted = payload.deleted
+    note.group_id = _to_int(payload.group_id)
+    note.created_by_user_id = _to_int(payload.created_by_user_id)
+    note.source_user_id = _to_int(payload.target_user_id)
+    note.updated_at = _to_datetime(payload.updated_at)
     db.flush()
     return note
 
 
-def create_sync_event(db: Session, note_id: int, user_id: int, created_at: datetime) -> models.SyncEvent:
+def create_sync_event(db: Session, note: models.Note, payload: SyncSendRequest) -> models.SyncEvent:
     event = models.SyncEvent(
-        note_id=note_id,
-        user_id=user_id,
+        note_id=note.id,
+        user_id=_to_int(payload.created_by_user_id),
         event_type="note",
-        updated_at=created_at,
+        updated_at=_to_datetime(payload.updated_at),
     )
     db.add(event)
     db.commit()
@@ -55,12 +65,19 @@ def get_events_since(db: Session, since: datetime) -> List[models.SyncEvent]:
     )
 
 
-def delete_events(db: Session, event_ids: Iterable[int]) -> int:
-    if not event_ids:
+def delete_events(db: Session, event_ids: Iterable[str]) -> int:
+    ids: List[int] = []
+    for eid in event_ids:
+        try:
+            ids.append(int(eid))
+        except (TypeError, ValueError):
+            continue
+    if not ids:
         return 0
+
     deleted = (
         db.query(models.SyncEvent)
-        .filter(models.SyncEvent.id.in_(list(event_ids)))
+        .filter(models.SyncEvent.id.in_(ids))
         .delete(synchronize_session=False)
     )
     db.commit()
